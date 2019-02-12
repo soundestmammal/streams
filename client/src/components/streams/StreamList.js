@@ -4,26 +4,24 @@ import { fetchStreams } from '../../actions';
 
 class StreamList extends Component {
     componentDidMount() {
-        this.props.fetchStreams();
+        // this.props.fetchStreams();
     }
-    renderList = () => {
-        this.props.streams.map(stream => {
-            return <div>{stream.title}</div>
-        })
-    }
+    // renderList = () => {
+    //     this.props.streams.map(stream => {
+    //         return <div>{stream.title}</div>
+    //     });
+    // }
     render() {
         return (
             <div>
-                {this.renderList()}
+                This
             </div>
         );
 }
 }
 
-const mapStateToProps = (state) => {
-    return {
-        streams: state.streams
-    };
-}
+const mapStateToProps = state => {
+    return { streams: Object.values(state.streams)};
+};
 
 export default connect(mapStateToProps, {fetchStreams})(StreamList);
