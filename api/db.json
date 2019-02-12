@@ -1,3 +1,19 @@
 {
-    "streams": []
+  "streams": [
+    {
+      "title": "Flux Coffee",
+      "description": "Locally roasted good coffee!",
+      "id": 1
+    },
+    {
+      "title": "Flux Coffee",
+      "description": "Locally roasted good coffee!",
+      "id": 2
+    },
+    {
+      "title": "Flux Coffee",
+      "description": "Locally roasted good coffee!",
+      "id": 3
+    }
+  ]
 }
